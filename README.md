@@ -1,8 +1,9 @@
 # Description  
 This app is just to prepare your cheat sheet when you learn new programming language.  
 For now it has only one "CheatSheet" but it is scheduled to increase more CheatSheet to prepare multiple cheat sheet for each language, in the future. Example usage is as follows.   
-    
-# Image Usage        
+You could play around with admin account(email: admin@email.com, pw: 111111) in [here](https://cheatsheeeeet.herokuapp.com/).      
+      
+# Image Usage          
 <img src="https://image.ibb.co/dvAXWb/Screen_Shot_2018_01_03_at_21_07_29.png" alt="appImage" border="0" />    
     
 # Error     
