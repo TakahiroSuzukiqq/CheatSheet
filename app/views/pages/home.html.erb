@@ -1,0 +1,13 @@
+
+<h1> Welcome to Your CheatSheet</h1>
+<br />
+
+<% if user_signed_in? %>
+
+  <%= render 'partials/condition_fields' %>
+<% else %>
+    <h3>Login or Register to see the Ruby cheat sheet</h3>
+    <img src="/assets/appImage.png" />
+    <br />
+    <h4><%= link_to('See more', new_user_session_path)  %></h4>
+<% end %>

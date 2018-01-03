@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>CheatSheet -All The List-</h1>
+<br>
+<%= render 'partials/condition_fields' %>
+<br>
+
+<h2>Method & Use cases</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= sort_link @search, "Method" %></th>
+      <th><%= sort_link @search, "Use cases" %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <td><%= post.description %></td>
+        <td><%#= post.user.email %></td>
+        <td><%#= post.user.id %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+<%= link_to 'Back to The List', posts_path %> || <%= link_to 'Home', root_path %> || <%= link_to 'Post New Method', new_post_path %>

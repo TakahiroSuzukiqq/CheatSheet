@@ -1,0 +1,11 @@
+<h2>Quick Search</h2>
+<%= search_form_for @search  do |f| %>
+    <div class="field">
+      <%= f.label :title_or_description_cont, "Contains: " %>
+      <%= f.text_field :title_or_description_cont, :size=>"60" %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Search" %>
+      <%= link_to 'Reset', posts_path %>
+    </div>
+<% end %>
